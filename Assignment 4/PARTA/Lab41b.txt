@@ -1,0 +1,17 @@
+This can be implemented using inheritance.
+The cylinder class can be derived from the Circle class.
+
+class Cylinder extends Circle{
+  public Cylinder(double radius, double height) {
+    super(radius);
+    this.height = height;
+	}
+
+  public double getArea() {
+    return 2 * Math.PI * this.radius * this.height;
+	}
+
+  public double getVolume() {
+    return Math.PI * Math.pow(this.radius, 2) * this.height;
+	}
+}
